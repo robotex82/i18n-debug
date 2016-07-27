@@ -39,5 +39,5 @@ module I18n
     end
   end
 
-  Backend::Simple.prepend(Debug::Hook)
+  Backend::Simple.send(:prepend, Debug::Hook)
 end
